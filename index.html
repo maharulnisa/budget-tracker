@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Budget Tracker</h2>
+    
+    <form id="budget-form">
+      <label for="budgetInput">Your Budget:</label>
+      <input type="number" id="budgetInput" placeholder="Enter your budget"/>
+      <button id="setBudgetBtn">Set Budget</button>
+    </form>
+
+    <form id="expense-form">
+      <label for="expenseNameInput">Expense Description:</label>
+      <input type="text" id="expenseNameInput" placeholder="e.g., Groceries"/>
+      <input type="number" id="expenseAmountInput" placeholder="e.g., 500"/>
+      <button id="addExpenseBtn">Add Expense</button>
+    </form>
+
+    <div class="summary">
+      <p>Total Budget: Rs. <span id="budgetTotal">0.00</span></p>
+      <p>Total Expenses: Rs. <span id="expensesTotal">0.00</span></p>
+      <p>Remaining: Rs. <span id="remainingTotal">0.00</span></p>
+    </div>
+
+    <h3>Expense History:</h3>
+    <ul id="expenseList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

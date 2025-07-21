@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6db8c2, #94afc8);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: #b5d4df;
+  width: 100%;
+  max-width: 700px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #1976d2;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+form label {
+  flex: 100%;
+  font-weight: 500;
+  color: #333;
+}
+
+form input {
+  flex: 1 1 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form button {
+  flex: 1 1 100%;
+  padding: 10px;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #375a8f;
+}
+
+.budget-display {
+  background: #f1f1f1;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.budget-display p {
+  flex: 1 1 30%;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.history-section {
+  margin-top: 20px;
+}
+
+.history-section h2 {
+  font-size: 20px;
+  color: #144b81;
+  margin-bottom: 10px;
+}
+
+#expenseList {
+  list-style: none;
+}
+
+#expenseList li {
+  background: #e3f2fd;
+  border-left: 5px solid #0e4780;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#expenseList li span {
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .budget-display p {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+
+  form input {
+    flex: 1 1 100%;
+  }
+
+  form button {
+    flex: 1 1 100%;
+  }
+}
